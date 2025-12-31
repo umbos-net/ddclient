@@ -6,7 +6,7 @@ services:
     volumes:
       - ./ddclient.conf:/config/ddclient.conf
     environment:
-      - PUID: 1000
-      - PGID: 1000
-      - TZ: "Etc/UTC"
-      - CLOUDFLARE_DNS_API_TOKEN: ${CLOUDFLARE_DNS_API_TOKEN}
+      PUID: 1000
+      PGID: 1000
+      TZ: "America/New_York"
+      CLOUDFLARE_DNS_API_TOKEN: ${CLOUDFLARE_DNS_API_TOKEN}
